@@ -1,0 +1,14 @@
+[package]
+name = "diddycrypt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.7.5"               # AES encryption
+block-modes = "0.8.1"       # Block mode of operation for AES
+block-padding = "0.3"       # Padding for block ciphers
+rand = "0.8"                # Random number generator
+hex = "0.4"                 # Hexadecimal encoding/decoding
+pbkdf2 = { version = "0.11", features = ["sha2"] } # PBKDF2 with SHA2
+sha2 = "0.10"               # SHA2 hashing
+zip = "0.6"
