@@ -47,7 +47,7 @@ use 'lock' to crypt folder
 use 'unlock' to uncrypt folder
 >
 > start
-> # Add files to the data/ folder
+> # Creates data folder
 > lock
 Encrypted data saved to 'encrypted_data.bin'
 > unlock
