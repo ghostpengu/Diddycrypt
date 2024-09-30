@@ -58,7 +58,7 @@ Encrypted data saved to 'encrypted_data.bin'
 1. Clone the repository:
    ```bash
    git clone https://github.com/ghostpengu/Diddycrypt.git
-   cd diddy-crypt
+   cd Diddycrypt
    ```
 
 2. Build the project:
