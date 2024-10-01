@@ -206,8 +206,8 @@ fn console() {
             let encrypted_data = encrypt(&zipped_data, &key[..16], &iv);
         
             // Save encrypted data to a file
-            save_encrypted_file("encrypted_data.bin", &encrypted_data, &salt, &iv);
-            println!("Encrypted data saved to 'encrypted_data.bin'");
+            save_encrypted_file("encrypted_data.diddy", &encrypted_data, &salt, &iv);
+            println!("Encrypted data saved to 'encrypted_data.diddy'");
         
 
         },
@@ -227,7 +227,7 @@ fn console() {
                  let password_decrypt = password_input_decrypt.trim().as_bytes();
      
                  // Read the encrypted data from the file
-                 let (salt_read, iv_read, encrypted_data_read) = read_encrypted_file("encrypted_data.bin");
+                 let (salt_read, iv_read, encrypted_data_read) = read_encrypted_file("encrypted_data.diddy");
      
                  // Regenerate the key from the decryption password and the same salt
                  let key_decrypt = generate_key(password_decrypt, &salt_read);
@@ -239,7 +239,7 @@ fn console() {
                  let output_folder = Path::new("data");
                  fs::create_dir_all(output_folder).expect("Failed to create output directory");
                  unzip_folder(&decrypted_data, output_folder);
-                 fs::remove_file("encrypted_data.bin").unwrap();
+                 fs::remove_file("encrypted_data.diddy").unwrap();
 
         },
         _ =>{
