@@ -71,3 +71,5 @@ Encrypted data saved to 'encrypted_data.bin'
    ```bash
    cargo run
    ```
+
+AND PLEASE BE SAFER THAN DIDDY
